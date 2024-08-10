@@ -1,0 +1,162 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Header Styles */
+.header {
+    background-color: #4CAF50;
+    padding: 20px 0;
+}
+
+.header .logo h1 {
+    color: #fff;
+    margin: 0;
+}
+
+.header .nav {
+    float: right;
+}
+
+.header .nav a {
+    color: #fff;
+    margin-left: 20px;
+    text-decoration: none;
+}
+
+.header .nav a:hover {
+    text-decoration: underline;
+}
+
+/* Hero Section Styles */
+.hero {
+    background: url('hero-image.jpg') no-repeat center center/cover;
+    color: black;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.hero h2 {
+    font-size: 3em;
+}
+
+.hero p {
+    font-size: 1.5em;
+}
+
+.cta-button {
+    background-color: #ff5722;
+    padding: 10px 20px;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.cta-button:hover {
+    background-color: #e64a19;
+}
+
+/* Services Section Styles */
+.services {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.services h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.service-item {
+    margin-bottom: 30px;
+}
+
+/* How It Works Section Styles */
+.how-it-works {
+    background-color: #f9f9f9;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.how-it-works h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.steps {
+    margin-bottom: 30px;
+}
+
+/* Pricing Section Styles */
+.pricing {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.pricing h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.pricing-plan {
+    display: inline-block;
+    width: 30%;
+    margin: 0 10px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.pricing-plan h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+/* Testimonials Section Styles */
+.testimonials {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.testimonials h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.testimonial-item {
+    margin-bottom: 30px;
+}
+
+/* Footer Styles */
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer p {
+    margin: 0;
+}
+
+.footer .social-links a {
+    color: #fff;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.footer .social-links a:hover {
+    text-decoration: underline;
+}

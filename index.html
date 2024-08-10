@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="farmApp">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farm Drone Services</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body ng-controller="MainController">
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <h1>Farm Drone Services</h1>
+            </div>
+            <nav class="nav">
+                <a href="#home">Home</a>
+                <a href="about.html">About Us</a>
+                <a href="#services">Services</a>
+                <a href="#pricing">Pricing</a>
+                <a href="contact.html">Contact</a>
+                <a href="login.html">Login</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <h2>Empowering Farmers with Affordable Drone Technology</h2>
+            <p>Monthly Farm Health Checkups with Advanced Pest Detection</p>
+            <a href="#services" class="cta-button">Get Started</a>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2>Our Services</h2>
+            <div class="service-item" ng-repeat="service in services">
+                <h3>"Precision Crop Monitoring"</h3>
+                <p>"Stay ahead of potential threats with our Precision Crop Monitoring service. Utilizing state-of-the-art drones equipped with high-resolution cameras and advanced sensors, we conduct thorough monthly checkups of your fields. Our detailed aerial imagery and data analytics help identify early signs of pest infestations, diseases, and nutrient deficiencies before they can impact your yield. With timely insights, you can make informed decisions and apply targeted interventions, ensuring your crops remain healthy and your harvests are maximized—all at a fraction of the cost of traditional methods."</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section id="how-it-works" class="how-it-works">
+        <div class="container">
+            <h2>How It Works</h2>
+            <div class="steps" ng-repeat="step in steps">
+                <h3>Step 1: Sign Up for Our Service</h3>
+                <p>Register online and choose a subscription plan that suits your farm's size and needs. Once enrolled, you'll have access to our monthly drone checkups and expert analysis.</p>
+                <h3>Step 2: Scheduled Drone Visits </h3>
+                <p>Our team will coordinate regular drone visits to your farm. These visits are scheduled based on your crop cycles and local weather conditions to ensure optimal data collection.</p>
+                <h3>Step 3: High-Resolution Data Collection</h3>
+                <p>Our drones fly over your fields, capturing high-resolution images and detailed sensor data. This aerial survey covers every inch of your crops, identifying areas of concern that may not be visible from the ground.</p>
+                <h3>Step 4: Advanced Analysis and Reporting</h3>
+                <p>The collected data is processed using advanced algorithms and AI to detect signs of pests, diseases, and other potential issues. You'll receive a comprehensive report with actionable insights, including visual maps and detailed findings.</p>
+                <h3>Step 5: Tailored Pesticide Recommendations</h3>
+                <p>Based on the analysis, we provide you with precise pesticide recommendations. These are customized to address the specific issues identified in your crops, ensuring effective and efficient treatments.</p>
+                <h3>Step 6: Apply Solutions and Monitor Progress</h3>
+                <p>With our recommendations in hand, you can apply the necessary pesticides and monitor your crops' health. Our ongoing monthly checkups help you track progress and make adjustments as needed to protect your harvest.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="pricing">
+        <div class="container">
+            <h2>Our Pricing Plans</h2>
+            <div class="pricing-plans">
+                <div class="pricing-plan" ng-repeat="plan in pricingPlans">
+                    <h3>'Basic Plan'</h3>
+                    <p class="price">'$49 per month'</p>
+                    <ul>'Designed for small farms (up to 50 acres)'</ul>
+                            <ul>'Monthly drone checkups'</ul>
+                            <ul>'Basic pest and disease detection'</ul>
+                            <ul>'Simple health reports with visual maps'</ul>
+                            <ul>'Email support for inquiries and recommendations'</ul>
+                    </ul>
+                    <button class="cta-button">Choose Plan</button>
+                    <h3>'Standard Plan'</h3>
+                    <p class="price">'$99 per month'</p>
+                    <ul>'Ideal for medium-sized farms (50 to 200 acres)'</ul>
+                            <ul>'Monthly drone checkups with enhanced coverage'</ul>
+                            <ul>'Advanced pest, disease, and nutrient deficiency detection'</ul>
+                            <ul>'Detailed health reports with visual maps and analysis'</ul>
+                            <ul>'Tailored pesticide recommendations'</ul>
+                            <ul>'Priority email and phone support'</ul>
+                    <button class="cta-button">Choose Plan</button>
+                    <h3>'Premium Plan'</h3>
+                    <p class="price">'$149 per month'</p>
+                    <ul>'Best for large farms (over 200 acres)'</ul>
+                            <ul>'Monthly drone checkups with comprehensive coverage'</ul>
+                            <ul>'Full-spectrum pest, disease, and nutrient deficiency analysis'</ul>
+                            <ul>'In-depth health reports with multi-layer visual maps and predictive analytics'</ul>
+                            <ul>'Custom pesticide prescriptions and direct procurement options'</ul>
+                            <ul>'Priority email, phone, and on-site support'</ul>
+                            <ul>'Annual farm health audit and consultation with an agronomist'</ul>
+                    <button class="cta-button">Choose Plan</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <h2>What Farmers Are Saying</h2>
+            <div class="testimonial-item" >
+                <p>"Using this service has been a game-changer for our farm. The drone checkups are efficient, and the pest detection has significantly improved our crop health. Highly recommend it to all farmers looking for reliable and affordable solutions!"</p>
+                <h4>- Emily Davis</h4>
+                <p>"The monthly drone visits and detailed reports have saved us both time and money. We no longer have to worry about missing pest problems or over-applying pesticides. The personalized recommendations are spot on. Fantastic service!"</p>
+                <h4>- Michael Johnson</h4>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Farm Drone Services</p>
+            <div class="social-links">
+                <a href="#">Facebook</a>
+                <a href="#">Twitter</a>
+                <a href="#">Instagram</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- AngularJS and Script Files -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min
